@@ -245,7 +245,7 @@
     <Container class="javax.swing.JDesktopPane" name="JDesktopPane_Escritorio">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="e0" green="77" red="59" type="rgb"/>
+          <Color blue="d3" green="a" red="a" type="rgb"/>
         </Property>
       </Properties>
       <AuxValues>

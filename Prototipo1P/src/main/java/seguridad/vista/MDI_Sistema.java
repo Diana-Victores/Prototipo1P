@@ -85,7 +85,7 @@ public class MDI_Sistema extends javax.swing.JFrame {
         setTitle("Sistema Hotelero");
         setResizable(false);
 
-        JDesktopPane_Escritorio.setBackground(new java.awt.Color(89, 119, 224));
+        JDesktopPane_Escritorio.setBackground(new java.awt.Color(10, 10, 211));
 
         JDesktopPane_Escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
