@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author SipaqueRita
+ * @author SipaqueRita - Diana Victores
  */
 public class ProveedorDAO {
 

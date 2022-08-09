@@ -7,7 +7,7 @@ package Comercial.dominio;
 
 /**
  *
- * @author Rita  Sipaque
+ * @author Rita  Sipaque - Diana Victores
  */
 public class Proveedor {
     
@@ -84,6 +84,7 @@ public class Proveedor {
         this.estatus_Proveedor = estatus_Proveedor;
     }
 
+   
     @Override
     public String toString() {
         return "Proveedor{" + "PK_codigo_Proveedor=" + PK_codigo_Proveedor + ", nombre_Proveedor=" + nombre_Proveedor + ", direccion_Proveedor=" + direccion_Proveedor + ", telefono_Proveedor=" + telefono_Proveedor + ", nit_Proveedor=" + nit_Proveedor + ", email_Proveedor=" + email_Proveedor + ", saldo_Proveedor=" + saldo_Proveedor + ", estatus_Proveedor=" + estatus_Proveedor + '}';
