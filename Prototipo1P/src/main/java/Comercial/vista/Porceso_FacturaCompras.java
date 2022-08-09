@@ -249,8 +249,8 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
         Lbfacturadetalle1 = new javax.swing.JLabel();
         txtTotal1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        Btn_Reporte = new javax.swing.JButton();
         Btn_Ayuda = new javax.swing.JButton();
+        Btn_Reporte = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setClosable(true);
@@ -434,7 +434,6 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
         });
 
         Lbfacturadetalle.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        Lbfacturadetalle.setForeground(new java.awt.Color(0, 0, 153));
         Lbfacturadetalle.setText("Factura Detalle");
 
         Lbfecha.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -685,12 +684,17 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
             }
         });
 
+        Btn_Ayuda.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Btn_Ayuda.setText("Ayuda");
+
         javax.swing.GroupLayout PanleFacturaDetallesLayout = new javax.swing.GroupLayout(PanleFacturaDetalles);
         PanleFacturaDetalles.setLayout(PanleFacturaDetallesLayout);
         PanleFacturaDetallesLayout.setHorizontalGroup(
             PanleFacturaDetallesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanleFacturaDetallesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(47, 47, 47)
+                .addComponent(Btn_Ayuda)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnGuardar)
                 .addGap(32, 32, 32)
                 .addComponent(btnEliminar)
@@ -742,7 +746,8 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
                 .addGroup(PanleFacturaDetallesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGuardar)
                     .addComponent(btnEliminar)
-                    .addComponent(btnModificar))
+                    .addComponent(btnModificar)
+                    .addComponent(Btn_Ayuda))
                 .addGap(20, 20, 20)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(PanleFacturaDetallesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -784,9 +789,6 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
             }
         });
 
-        Btn_Ayuda.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Btn_Ayuda.setText("Ayuda");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -808,39 +810,28 @@ public class Porceso_FacturaCompras extends javax.swing.JInternalFrame {
                         .addComponent(PanleFacturaDetalles, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(48, 48, 48))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(Btn_Reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(65, 65, 65))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LbTITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(220, 220, 220))))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Btn_Ayuda)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(82, 82, 82)
+                        .addComponent(Btn_Reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(34, 34, 34))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(6, 6, 6)
-                .addComponent(LbTITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LbTITULO, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Btn_Reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(LbNIT, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LbNofactura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Lbtitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(Btn_Reporte, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(PanleFacturaDetalles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(PanelFacturaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Btn_Ayuda)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
